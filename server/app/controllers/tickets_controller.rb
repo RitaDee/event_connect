@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class TicketsController < ApplicationController
   before_action :set_ticket, only: %i[show update destroy]
 

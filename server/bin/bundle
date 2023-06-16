@@ -35,7 +35,7 @@ m = Module.new do
     end
     bundler_version
   end
-  # rubocop:disable Metrics/CyclomaticComplexity
+  # rubocop:enable Metrics/CyclomaticComplexity
 
   def gemfile
     gemfile = ENV.fetch('BUNDLE_GEMFILE', nil)

@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby.exe
-# rubocop:disable all
 require 'fileutils'
 
 # path to your application root.

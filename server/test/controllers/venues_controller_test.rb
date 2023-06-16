@@ -1,35 +1,37 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class VenuesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @venue = venues(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get venues_url, as: :json
     assert_response :success
   end
 
-  test "should create venue" do
-    assert_difference("Venue.count") do
+  test 'should create venue' do
+    assert_difference('Venue.count') do
       post venues_url, params: { venue: { location: @venue.location, name: @venue.name } }, as: :json
     end
 
     assert_response :created
   end
 
-  test "should show venue" do
+  test 'should show venue' do
     get venue_url(@venue), as: :json
     assert_response :success
   end
 
-  test "should update venue" do
+  test 'should update venue' do
     patch venue_url(@venue), params: { venue: { location: @venue.location, name: @venue.name } }, as: :json
     assert_response :success
   end
 
-  test "should destroy venue" do
-    assert_difference("Venue.count", -1) do
+  test 'should destroy venue' do
+    assert_difference('Venue.count', -1) do
       delete venue_url(@venue), as: :json
     end
 

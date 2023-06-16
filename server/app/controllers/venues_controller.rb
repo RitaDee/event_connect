@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class VenuesController < ApplicationController
-  before_action :set_venue, only: %i[ show update destroy ]
+  before_action :set_venue, only: %i[show update destroy]
 
   # GET /venues
   def index
@@ -39,13 +41,14 @@ class VenuesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_venue
-      @venue = Venue.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def venue_params
-      params.require(:venue).permit(:name, :location)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_venue
+    @venue = Venue.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def venue_params
+    params.require(:venue).permit(:name, :location)
+  end
 end

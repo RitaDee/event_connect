@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class TicketsController < ApplicationController
-  before_action :set_ticket, only: %i[ show update destroy ]
+  before_action :set_ticket, only: %i[show update destroy]
 
   # GET /tickets
   def index
@@ -39,13 +41,14 @@ class TicketsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_ticket
-      @ticket = Ticket.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def ticket_params
-      params.require(:ticket).permit(:price, :quantity, :event_id, :user_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_ticket
+    @ticket = Ticket.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def ticket_params
+    params.require(:ticket).permit(:price, :quantity, :event_id, :user_id)
+  end
 end

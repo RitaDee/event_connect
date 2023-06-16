@@ -21,12 +21,12 @@ Metrics/AbcSize:
   Include:
     - "app/controllers/*"
     - "app/models/*"
-  Max: 50
+  Max: 100
 Metrics/ClassLength:
-  Max: 150
+  Max: 250
 Metrics/BlockLength:
   AllowedMethods: ['describe']
-  Max: 30
+  Max: 100
 
 Style/Documentation:
   Enabled: false

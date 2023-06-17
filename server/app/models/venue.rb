@@ -1,2 +1,0 @@
-class Venue < ApplicationRecord
-end

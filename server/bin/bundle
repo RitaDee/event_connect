@@ -40,8 +40,6 @@ m = Module.new do
   # rubocop:enable Metrics/PerceivedComplexity
   # rubocop:enable Metrics/CyclomaticComplexity
 
-
-
   def gemfile
     gemfile = ENV.fetch('BUNDLE_GEMFILE', nil)
     return gemfile if gemfile && !gemfile.empty?

@@ -108,6 +108,8 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
+    nokogiri (1.15.2-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.15.2-x86_64-darwin)
       racc (~> 1.4)
     parallel (1.23.0)
@@ -115,6 +117,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.3)
+    pg (1.5.3-x64-mingw-ucrt)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -171,6 +174,8 @@ GEM
     timeout (0.3.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2023.3)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.4.2)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
@@ -178,6 +183,7 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-darwin-19
 
 DEPENDENCIES
@@ -190,7 +196,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.0.1p64
+   ruby 3.1.3p185
 
 BUNDLED WITH
    2.4.12

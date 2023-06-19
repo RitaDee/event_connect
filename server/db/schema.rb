@@ -1,4 +1,5 @@
-ActiveRecord::Schema.define(version: 20_230_619_103_618) do
+ActiveRecord::Schema[7.0].define(version: 20_230_619_112_117) do
+
   enable_extension 'plpgsql'
 
   create_table 'events', force: :cascade do |t|
@@ -28,7 +29,7 @@ ActiveRecord::Schema.define(version: 20_230_619_103_618) do
     t.bigint 'user_id', null: false
     t.integer 'quantity'
     t.float 'price'
-    t.string 'type'
+    t.string 'ticket_type'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.index ['event_id'], name: 'index_tickets_on_event_id'

@@ -1,0 +1,1001 @@
+  [1m[35m (226.3ms)[0m  [1m[35mCREATE DATABASE "server_development" ENCODING = 'unicode'[0m
+  [1m[35m (62.6ms)[0m  [1m[35mCREATE DATABASE "server_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2023-06-19 12:14:45 +0100
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 6 pending migrations:
+
+20230618105629_create_venues.rb
+20230618105710_create_users.rb
+20230618105853_create_events.rb
+20230618105945_create_tickets.rb
+20230618110029_create_reservations.rb
+20230619103618_add_devise_to_users.rb
+
+
+):
+  
+activerecord (7.0.5) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.5) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.5) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.5) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-06-19 12:14:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 6 pending migrations:
+
+20230618105629_create_venues.rb
+20230618105710_create_users.rb
+20230618105853_create_events.rb
+20230618105945_create_tickets.rb
+20230618110029_create_reservations.rb
+20230619103618_add_devise_to_users.rb
+
+
+):
+  
+activerecord (7.0.5) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.5) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.5) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.5) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4709995827031202925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateVenues (20230618105629)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "venues" ("id" bigserial primary key, "name" character varying, "location" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (12.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230618105629"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20230618105710)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230618105710"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEvents (20230618105853)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "title" character varying, "date" date, "time" time, "description" text, "user_id" bigint NOT NULL, "venue_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_f476266cf4"
+FOREIGN KEY ("venue_id")
+  REFERENCES "venues" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_events_on_venue_id" ON "events" ("venue_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230618105853"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTickets (20230618105945)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "tickets" ("id" bigserial primary key, "event_id" bigint NOT NULL, "user_id" bigint NOT NULL, "quantity" integer, "price" float, "type" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_4def87ea62"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+, CONSTRAINT "fk_rails_538a036fb9"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_tickets_on_event_id" ON "tickets" ("event_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE INDEX "index_tickets_on_user_id" ON "tickets" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230618105945"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReservations (20230618110029)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "reservations" ("id" bigserial primary key, "ticket_id" bigint NOT NULL, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_d029af3fd6"
+FOREIGN KEY ("ticket_id")
+  REFERENCES "tickets" ("id")
+, CONSTRAINT "fk_rails_48a92fce51"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_reservations_on_ticket_id" ON "reservations" ("ticket_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_reservations_on_user_id" ON "reservations" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230618110029"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDeviseToUsers (20230619103618)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp(6)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp(6)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230619103618"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-06-19 11:17:36.658223"], ["updated_at", "2023-06-19 11:17:36.658223"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4709995827031202925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-06-19 12:17:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 306)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2767)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-06-19 12:18:00 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `set_user'
+Completed 404 Not Found in 11ms (ActiveRecord: 6.9ms | Allocations: 2674)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_in):
+  
+app/controllers/users_controller.rb:47:in `set_user'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-06-19 12:18:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-06-19 12:29:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `set_user'
+Completed 404 Not Found in 52ms (ActiveRecord: 14.5ms | Allocations: 4388)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_in):
+  
+app/controllers/users_controller.rb:47:in `set_user'
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-06-19 12:37:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_up"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `set_user'
+Completed 404 Not Found in 55ms (ActiveRecord: 19.2ms | Allocations: 3437)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_up):
+  
+app/controllers/users_controller.rb:47:in `set_user'
+Started POST "/users/sign_up" for 127.0.0.1 at 2023-06-19 12:37:40 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+Started POST "/users/sign_up" for 127.0.0.1 at 2023-06-19 12:41:06 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_up"):
+  
+Started GET "/users/signup/sign_up" for 127.0.0.1 at 2023-06-19 12:42:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/signup/sign_up"):
+  
+Started GET "/rails/info/routes" for ::1 at 2023-06-19 12:43:09 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [70 times] (Duration: 9.4ms | Allocations: 10884)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.1ms | Allocations: 880)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 19.2ms | Allocations: 17602)
+  Rendered layout /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb (Duration: 20.1ms | Allocations: 17879)
+Completed 200 OK in 24ms (Views: 21.9ms | Allocations: 18923)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-06-19 12:43:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/info/routes" for ::1 at 2023-06-19 12:44:12 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [70 times] (Duration: 6.0ms | Allocations: 10890)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.3ms | Allocations: 880)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 10.2ms | Allocations: 17624)
+  Rendered layout /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb (Duration: 10.7ms | Allocations: 17898)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 18778)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-06-19 12:45:54 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 18.5ms | Allocations: 4199)
+
+
+Started POST "/users/" for 127.0.0.1 at 2023-06-19 12:47:00 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"name"=>"Rita", "registration"=>{"name"=>"Rita"}}
+Completed 422 Unprocessable Entity in 27ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7057)
+
+
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ritankemdaniel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ritankemdaniel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Rita"], ["created_at", "2023-06-19 11:53:05.828513"], ["updated_at", "2023-06-19 11:53:05.828513"], ["email", "ritankemdaniel@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/users/" for 127.0.0.1 at 2023-06-19 12:54:46 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"name"=>"Rita", "email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]", "registration"=>{"name"=>"Rita", "email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]"}}
+Completed 422 Unprocessable Entity in 24ms (Views: 0.1ms | ActiveRecord: 8.5ms | Allocations: 3374)
+
+
+Started POST "/users/" for 127.0.0.1 at 2023-06-19 12:55:23 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"name"=>"Rita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]", "registration"=>{"name"=>"Rita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms | Allocations: 440)
+
+
+Started POST "/users/" for 127.0.0.1 at 2023-06-19 12:58:04 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}}}
+[31mUnpermitted parameter: :name. Context: { controller: Api::V1::Users::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x0000000106b4eb30>, params: {"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}, "controller"=>"api/v1/users/registrations", "action"=>"create", "registration"=>{"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ritadaniel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 274ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 5520)
+
+
+Started POST "/users/" for 127.0.0.1 at 2023-06-19 12:58:32 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}}}
+[31mUnpermitted parameter: :name. Context: { controller: Api::V1::Users::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x000000011155f200>, params: {"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}, "controller"=>"api/v1/users/registrations", "action"=>"create", "registration"=>{"user"=>{"name"=>"nita", "email"=>"ritadaniel@gmail.com", "password"=>"[FILTERED]"}}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ritadaniel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 259ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 3441)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-19 13:03:30 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 526)
+Completed 200 OK in 14ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4587)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-06-19 13:03:36 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 6.4ms | Allocations: 7505)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-06-19 13:06:07 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 938)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-06-19 13:06:53 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 823)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-06-19 13:06:54 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:10:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 837)
+
+
+Started POST "/users/" for 127.0.0.1 at 2023-06-19 13:11:44 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/config/routes.rb:19: syntax error, unexpected end-of-input, expecting `end'):
+  
+config/routes.rb:19: syntax error, unexpected end-of-input, expecting `end'
+config/routes.rb:19: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users/" for 127.0.0.1 at 2023-06-19 13:13:45 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:14:29 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"Ayo", "email"=>"ayomoses111@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Ayo", "email"=>"ayomoses111@gmail.com", "password"=>"[FILTERED]"}}}
+Completed 422 Unprocessable Entity in 23ms (Views: 0.2ms | ActiveRecord: 15.0ms | Allocations: 4368)
+
+
+Started GET "/users/" for 127.0.0.1 at 2023-06-19 13:24:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/" for 127.0.0.1 at 2023-06-19 13:24:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/api/v1/users/" for 127.0.0.1 at 2023-06-19 13:24:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/users/" for 127.0.0.1 at 2023-06-19 13:25:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-06-19 13:25:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/api/v1/user" for 127.0.0.1 at 2023-06-19 13:26:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/user"):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:26:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:26:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:26:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:30:46 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/registrations_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/users/registrations_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/users/registrations_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:34:57 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"Jugo", "email"=>"jugo@yahoo.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Jugo", "email"=>"jugo@yahoo.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jugo@yahoo.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Jugo"], ["created_at", "2023-06-19 12:34:58.092117"], ["updated_at", "2023-06-19 12:34:58.092117"], ["email", "jugo@yahoo.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 15.2ms | Allocations: 12007)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+actionpack (7.0.5) lib/action_dispatch/request/session.rb:253:in `load_for_write!'
+actionpack (7.0.5) lib/action_dispatch/request/session.rb:151:in `[]='
+warden (1.2.9) lib/warden/session_serializer.rb:27:in `store'
+warden (1.2.9) lib/warden/proxy.rb:187:in `set_user'
+devise (4.9.2) lib/devise/controllers/sign_in_out.rb:53:in `sign_in'
+devise (4.9.2) app/controllers/devise/registrations_controller.rb:106:in `sign_up'
+devise (4.9.2) app/controllers/devise/registrations_controller.rb:24:in `create'
+actionpack (7.0.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.5) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.5) lib/active_support/callbacks.rb:107:in `run_callbacks'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.5) lib/abstract_controller/base.rb:151:in `process'
+actionpack (7.0.5) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.5) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden-jwt_auth (0.8.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.8.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.2.7) lib/rack/builder.rb:244:in `call'
+warden-jwt_auth (0.8.0) lib/warden/jwt_auth/middleware.rb:22:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+activerecord (7.0.5) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:42:21 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"Abdul", "email"=>"abdul@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Abdul", "email"=>"abdul@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abdul@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Abdul"], ["created_at", "2023-06-19 12:42:22.293319"], ["updated_at", "2023-06-19 12:42:22.293319"], ["email", "abdul@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 298ms (ActiveRecord: 11.2ms | Allocations: 10417)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+actionpack (7.0.5) lib/action_dispatch/request/session.rb:253:in `load_for_write!'
+actionpack (7.0.5) lib/action_dispatch/request/session.rb:151:in `[]='
+warden (1.2.9) lib/warden/session_serializer.rb:27:in `store'
+warden (1.2.9) lib/warden/proxy.rb:187:in `set_user'
+devise (4.9.2) lib/devise/controllers/sign_in_out.rb:53:in `sign_in'
+devise (4.9.2) app/controllers/devise/registrations_controller.rb:106:in `sign_up'
+devise (4.9.2) app/controllers/devise/registrations_controller.rb:24:in `create'
+actionpack (7.0.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.5) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.5) lib/active_support/callbacks.rb:107:in `run_callbacks'
+actionpack (7.0.5) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.5) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.5) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.5) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.5) lib/abstract_controller/base.rb:151:in `process'
+actionpack (7.0.5) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.5) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.5) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden-jwt_auth (0.8.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.8.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.2.7) lib/rack/builder.rb:244:in `call'
+warden-jwt_auth (0.8.0) lib/warden/jwt_auth/middleware.rb:22:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+activerecord (7.0.5) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-06-19 13:49:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 526)
+Completed 200 OK in 12ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4587)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:49:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:51:44 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"Abel", "email"=>"abel@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Abel", "email"=>"abel@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Abel"], ["created_at", "2023-06-19 12:51:44.629190"], ["updated_at", "2023-06-19 12:51:44.629190"], ["email", "abel@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 298ms (Views: 0.3ms | ActiveRecord: 9.0ms | Allocations: 13708)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 13:52:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-06-19 13:52:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 13:56:09 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 13:56:52 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/users/sessions_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 13:56:59 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:34: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/users/sessions_controller.rb:34: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:34: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 13:57:07 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 13:57:09 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:01:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::Users::SessionsController#new as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 548)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:31:in `sign_in_params'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:02:57 +0100
+Processing by Api::V1::Users::SessionsController#new as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 244)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:31:in `sign_in_params'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:04:14 +0100
+Processing by Api::V1::Users::SessionsController#new as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 691)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:31:in `sign_in_params'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:04:15 +0100
+Processing by Api::V1::Users::SessionsController#new as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 297)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:31:in `sign_in_params'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:04:49 +0100
+Processing by Api::V1::Users::SessionsController#new as HTML
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 258)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:31:in `sign_in_params'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:06:57 +0100
+Processing by Api::V1::Users::SessionsController#new as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 260)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:31:in `sign_in_params'
+Started POST "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:07:46 +0100
+Processing by Api::V1::Users::SessionsController#create as */*
+  Parameters: {"user"=>{"name"=>"Rita", "email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"Rita", "email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ritankemdaniel@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users/sessions_controller.rb:10:in `create'
+Completed 200 OK in 266ms (Views: 0.2ms | ActiveRecord: 4.6ms | Allocations: 3993)
+
+
+Started POST "/api/v1/users/sign_out" for 127.0.0.1 at 2023-06-19 14:08:07 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/users/sign_out"):
+  
+Started POST "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:08:18 +0100
+Processing by Api::V1::Users::SessionsController#create as */*
+  Parameters: {"user"=>{"name"=>"Rita", "email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"Rita", "email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ritankemdaniel@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users/sessions_controller.rb:10:in `create'
+Completed 200 OK in 258ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 779)
+
+
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:10:34 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:16: syntax error, unexpected ';', expecting '}'
+...             email: user.email;
+...                              ^
+/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:18: syntax error, unexpected ':', expecting `end'
+                name: user.name
+                    ^
+/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users/sessions_controller.rb:20: syntax error, unexpected '}', expecting `end'
+              }
+              ^
+):
+  
+app/controllers/api/v1/users/sessions_controller.rb:16: syntax error, unexpected ';', expecting '}'
+app/controllers/api/v1/users/sessions_controller.rb:18: syntax error, unexpected ':', expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:20: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:16: syntax error, unexpected ';', expecting '}'
+app/controllers/api/v1/users/sessions_controller.rb:18: syntax error, unexpected ':', expecting `end'
+app/controllers/api/v1/users/sessions_controller.rb:20: syntax error, unexpected '}', expecting `end'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:11:33 +0100
+Processing by Api::V1::Users::SessionsController#new as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 548)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:33:in `sign_in_params'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:11:54 +0100
+Processing by Api::V1::Users::SessionsController#new as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 260)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:33:in `sign_in_params'
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:13:37 +0100
+Processing by Api::V1::Users::SessionsController#new as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 548)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:33:in `sign_in_params'
+Started POST "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 14:13:52 +0100
+Processing by Api::V1::Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"ritankemdaniel@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ritankemdaniel@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users/sessions_controller.rb:10:in `create'
+Completed 200 OK in 266ms (Views: 0.3ms | ActiveRecord: 5.4ms | Allocations: 3842)
+
+
+Started GET "/api/v1/users/" for 127.0.0.1 at 2023-06-19 14:58:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-06-19 15:13:09 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"Dan", "email"=>"daniel@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Dan", "email"=>"daniel@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "daniel@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Dan"], ["created_at", "2023-06-19 14:13:09.391300"], ["updated_at", "2023-06-19 14:13:09.391300"], ["email", "daniel@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 291ms (Views: 0.3ms | ActiveRecord: 17.4ms | Allocations: 10869)
+
+
+Started POST "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 15:13:29 +0100
+Processing by Api::V1::Users::SessionsController#create as */*
+  Parameters: {"user"=>{"name"=>"Dan", "email"=>"daniel@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"Dan", "email"=>"daniel@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "daniel@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users/sessions_controller.rb:10:in `create'
+Completed 200 OK in 245ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1454)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-06-19 15:20:33 +0100
+Processing by Api::V1::Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"name"=>"Marco", "email"=>"marco@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Marco", "email"=>"marco@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marco@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Marco"], ["created_at", "2023-06-19 14:20:33.858050"], ["updated_at", "2023-06-19 14:20:33.858050"], ["email", "marco@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 313ms (Views: 0.2ms | ActiveRecord: 25.5ms | Allocations: 7595)
+
+
+Started POST "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 15:20:59 +0100
+Processing by Api::V1::Users::SessionsController#create as */*
+  Parameters: {"user"=>{"name"=>"Marco", "email"=>"marco@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"Marco", "email"=>"marco@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marco@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users/sessions_controller.rb:10:in `create'
+Completed 200 OK in 259ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 873)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-06-19 15:23:46 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+Started POST "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 15:24:57 +0100
+Processing by Api::V1::Users::SessionsController#create as */*
+  Parameters: {"user"=>{"name"=>"Marco", "email"=>"marco@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"Marco", "email"=>"marco@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marco@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users/sessions_controller.rb:10:in `create'
+Completed 200 OK in 261ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 794)
+
+
+Started GET "/" for ::1 at 2023-06-19 15:25:58 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 298)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 992)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-06-19 15:26:05 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [64 times] (Duration: 9.3ms | Allocations: 10066)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.2ms | Allocations: 880)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 13.9ms | Allocations: 16548)
+  Rendered layout /Users/michaelobinyan/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb (Duration: 14.4ms | Allocations: 16825)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 17706)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-06-19 15:28:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 15:28:34 +0100
+  
+ActionController::RoutingError (uninitialized constant Api::V1::UsersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 15:29:02 +0100
+  
+ActionController::RoutingError (uninitialized constant Api::V1::UsersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 15:33:05 +0100
+  
+SyntaxError (/Users/michaelobinyan/Documents/Projects/event_connect/server/app/controllers/api/v1/users_controller.rb:54: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/users_controller.rb:54: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/users_controller.rb:54: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 15:35:23 +0100
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `index'
+Completed 200 OK in 38ms (Views: 4.9ms | ActiveRecord: 31.7ms | Allocations: 4851)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-19 16:06:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230619112117_change_type_field_in_tickets.rb
+
+
+):
+  
+activerecord (7.0.5) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.5) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.5) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.5) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4709995827031202925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeTypeFieldInTickets (20230619112117)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "tickets" RENAME COLUMN "type" TO "ticket_type"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230619112117"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4709995827031202925)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/users" for 127.0.0.1 at 2023-06-19 16:09:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `index'
+Completed 200 OK in 21ms (Views: 9.3ms | ActiveRecord: 8.9ms | Allocations: 20791)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-19 16:23:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (10.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 830)
+Completed 200 OK in 16ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 9184)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-06-19 16:24:36 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [70 times] (Duration: 7.7ms | Allocations: 11211)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionpack-7.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.9ms | Allocations: 1894)
+  Rendered /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 14.9ms | Allocations: 20247)
+  Rendered layout /Users/michaelobinyan/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/layouts/application.html.erb (Duration: 15.5ms | Allocations: 20681)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 22027)
+
+
+Started GET "/api/v1/users/sign_in" for 127.0.0.1 at 2023-06-19 16:25:00 +0100
+Processing by Api::V1::Users::SessionsController#new as HTML
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 1429)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/users/sessions_controller.rb:33:in `sign_in_params'
+Started GET "/api/v1/users/" for 127.0.0.1 at 2023-06-19 16:25:54 +0100
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `index'
+Completed 200 OK in 44ms (Views: 34.9ms | ActiveRecord: 8.3ms | Allocations: 19490)
+
+

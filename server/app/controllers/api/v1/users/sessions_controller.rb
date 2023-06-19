@@ -13,7 +13,9 @@ module Api
             render json: {
               message: 'You are logged in.',
               user: {
-                email: user.email
+                email: user.email,
+                id: user.id,
+                name: user.name
                 # Include other user attributes you want to send
               }
             }, status: :ok

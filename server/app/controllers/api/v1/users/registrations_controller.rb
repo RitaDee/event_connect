@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Api
   module V1
     module Users
@@ -40,4 +38,3 @@ module Api
     end
   end
 end
-

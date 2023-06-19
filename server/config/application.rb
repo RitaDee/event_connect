@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
 require 'rails/all'
@@ -10,6 +12,8 @@ module Server
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+
+    config.middleware.use ActionDispatch::Session::CookieStore
 
     # Configuration for the application, engines, and railties goes here.
     #

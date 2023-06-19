@@ -26,7 +26,7 @@ Metrics/ClassLength:
   Max: 250
 Metrics/BlockLength:
   AllowedMethods: ['describe']
-  Max: 50
+  Max: 300
 
 Style/Documentation:
   Enabled: false

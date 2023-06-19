@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class VenuesController < ApplicationController
   before_action :set_venue, only: %i[show update destroy]
 

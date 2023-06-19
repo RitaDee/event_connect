@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     module Users
@@ -7,7 +9,7 @@ module Api
 
         def create
           email = params[:user][:email]
-          user = User.find_by(email: email)
+          user = User.find_by(email:)
 
           if user&.valid_password?(params[:user][:password])
             render json: {

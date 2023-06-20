@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_many :tickets
 
   validates :name, presence: true
+
+  def admin?
+    admin
+  end
 end

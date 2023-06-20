@@ -10,6 +10,7 @@ module Api
           user = User.find_by(email: email)
 
           if user&.valid_password?(params[:user][:password])
+            sign_in(user) # Sign in the user
             render json: {
               message: 'You are logged in.',
               user: {
@@ -24,6 +25,17 @@ module Api
               message: 'Invalid email or password.',
               error: 'User not found or incorrect password.'
             }, status: :unauthorized
+          end
+        end
+
+        def destroy
+          user = current_user
+
+          if user.present?
+            sign_out(user) # Sign out the user
+            render json: { message: 'You are logged out.' }, status: :ok
+          else
+            render json: { message: 'No user signed in.' }, status: :unprocessable_entity
           end
         end
 

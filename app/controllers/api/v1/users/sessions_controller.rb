@@ -28,17 +28,6 @@ module Api
           end
         end
 
-        def destroy
-          user = current_user
-
-          if user.present?
-            sign_out(user) # Sign out the user
-            render json: { message: 'You are logged out.' }, status: :ok
-          else
-            render json: { message: 'No user signed in.' }, status: :unprocessable_entity
-          end
-        end
-
         private
 
         def sign_in_params

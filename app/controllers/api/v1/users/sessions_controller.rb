@@ -10,6 +10,7 @@ module Api
           user = User.find_by(email: email)
 
           if user&.valid_password?(params[:user][:password])
+            sign_in(user) # Sign in the user
             render json: {
               message: 'You are logged in.',
               user: {

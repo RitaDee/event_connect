@@ -6,15 +6,12 @@ Rails.application.routes.draw do
                    sessions: 'api/v1/users/sessions',
                    registrations: 'api/v1/users/registrations'
                  }
+
       resources :reservations
       resources :tickets
       resources :events
       resources :venues
-      resources :users
-    end
-  end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+      resources :users 
+        end
+      end
 end

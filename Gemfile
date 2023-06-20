@@ -22,6 +22,7 @@ gem 'fast_jsonapi'
 
 gem 'rack-cors'
 
+gem 'cancancan'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 

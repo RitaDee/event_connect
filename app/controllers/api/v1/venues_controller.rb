@@ -1,3 +1,5 @@
+module Api
+  module V1
 class VenuesController < ApplicationController
   before_action :set_venue, only: %i[show update destroy]
 
@@ -18,7 +20,7 @@ class VenuesController < ApplicationController
     @venue = Venue.new(venue_params)
 
     if @venue.save
-      render json: @venue, status: :created, location: @venue
+      render json: @venue, status: :created
     else
       render json: @venue.errors, status: :unprocessable_entity
     end
@@ -48,5 +50,7 @@ class VenuesController < ApplicationController
   # Only allow a list of trusted parameters through.
   def venue_params
     params.require(:venue).permit(:name, :location)
+  end
+  end
   end
 end

@@ -1,3 +1,5 @@
+module Api
+  module V1
 class TicketsController < ApplicationController
   before_action :set_ticket, only: %i[show update destroy]
 

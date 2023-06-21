@@ -3,4 +3,5 @@ class Venue < ApplicationRecord
 
   validates :name, presence: true
   validates :location, presence: true
+  validates :images, presence: true
 end

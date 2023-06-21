@@ -49,7 +49,7 @@ module Api
 
       # Only allow a list of trusted parameters through.
       def venue_params
-        params.require(:venue).permit(:name, :location)
+        params.require(:venue).permit(:name, :location, :images)
       end
     end
   end

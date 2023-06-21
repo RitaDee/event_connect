@@ -49,7 +49,7 @@ module Api
 
       # Only allow a list of trusted parameters through.
       def ticket_params
-        params.require(:ticket).permit(:event_id, :user_id, :quantity, :price, :ticket_type)
+        params.require(:ticket).permit(:event_id, :user_id, :quantity, :price, :ticket_type, :images)
       end
     end
   end

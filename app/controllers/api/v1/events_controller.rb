@@ -49,7 +49,7 @@ module Api
 
       # Only allow a list of trusted parameters through.
       def event_params
-        params.require(:event).permit(:title, :date, :time, :description, :user_id, :venue_id)
+        params.require(:event).permit(:title, :date, :time, :description, :user_id, :venue_id, :images)
       end
     end
   end

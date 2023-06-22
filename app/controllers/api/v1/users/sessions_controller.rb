@@ -7,7 +7,7 @@ module Api
 
         def create
           email = params[:user][:email]
-          user = User.find_by(email:)
+          user = User.find_by(email: email)
 
           if user&.valid_password?(params[:user][:password])
             sign_in(user) # Sign in the user

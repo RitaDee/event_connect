@@ -16,15 +16,27 @@ module Api
       end
 
       # POST /reservations
-      def create
-        @reservation = Reservation.new(reservation_params)
+      # def create
+      #   @reservation = Reservation.new(reservation_params)
 
-        if @reservation.save
-          render json: @reservation, status: :created, location: @reservation
-        else
-          render json: @reservation.errors, status: :unprocessable_entity
-        end
-      end
+      #   if @reservation.save
+      #     render json: @reservation, status: :created, location: @reservation
+      #   else
+      #     render json: @reservation.errors, status: :unprocessable_entity
+      #   end
+      # end
+
+      # POST /reservations
+def create
+  @reservation = Reservation.new(reservation_params)
+
+  if @reservation.save
+    render json: @reservation, status: :created, location: api_v1_reservation_url(@reservation)
+  else
+    render json: @reservation.errors, status: :unprocessable_entity
+  end
+end
+
 
       # PATCH/PUT /reservations/1
       def update

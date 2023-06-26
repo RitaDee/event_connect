@@ -5,7 +5,7 @@ module Api
 
       # GET /reservations
       def index
-        @reservations = Reservation.includes(:ticket => :event).all
+        @reservations = Reservation.includes(ticket: :event).all
 
         render json: @reservations.to_json(include: { ticket: { include: :event } })
       end

@@ -9,9 +9,17 @@ Rails.application.routes.draw do
 
       resources :reservations
       resources :tickets
-      resources :events
-      resources :venues
-      resources :users 
+      resources :events do
+        member do
+          get 'tickets', to: 'tickets#event_tickets'
         end
       end
+      resources :users do
+        member do
+          get 'reservations', to: 'users#reservations'
+        end
+      end
+      resources :venues
+    end
+  end
 end

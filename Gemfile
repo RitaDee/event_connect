@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+<<<<<<< HEAD
 ruby '3.2.2'
+=======
+ruby '3.1.3'
+>>>>>>> 3087d0ea45ed21bb62bedcf0d8a3fdfe2856dae2
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 

@@ -40,6 +40,14 @@ module Api
         @user.destroy
       end
 
+      # GET /users/1/reservations
+      def reservations
+        @user = User.find(params[:id])
+        @reservations = @user.reservations
+
+        render json: @reservations
+      end
+
       private
 
       # Use callbacks to share common setup or constraints between actions.

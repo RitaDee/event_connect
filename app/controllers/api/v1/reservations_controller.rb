@@ -12,8 +12,19 @@ module Api
 
       # GET /reservations/1
       def show
-        render json: @reservation
+        render json: @reservation, include: { ticket: { include: :event } }
       end
+
+      # POST /reservations
+      # def create
+      #   @reservation = Reservation.new(reservation_params)
+
+      #   if @reservation.save
+      #     render json: @reservation, status: :created, location: @reservation
+      #   else
+      #     render json: @reservation.errors, status: :unprocessable_entity
+      #   end
+      # end
 
       # POST /reservations
       def create

@@ -40,6 +40,14 @@ module Api
         @ticket.destroy
       end
 
+      # GET /events/:id/tickets
+      def event_tickets
+        @event = Event.find(params[:id])
+        @tickets = @event.tickets
+
+        render json: @tickets
+      end
+
       private
 
       # Use callbacks to share common setup or constraints between actions.

@@ -37,13 +37,12 @@
 
 - Click this [link](https://github.com/RitaDee/event_connect_client) to access the front end app that was built using react.
 
-- Click this [link](https://github.com/Ezzywealth/cab_bookings_frontend/pull/21) to access the front end app pull request.
+- Click this [link](https://github.com/RitaDee/event_connect_client/pull/8) to access the front end app pull request.
 
 ### Kanban Board
 
-- Click this [link](https://github.com/users/Ezzywealth/projects/9) to access the Kanban Board.
-
-- Click this [link](https://user-images.githubusercontent.com/108669691/244860298-7ac472f8-bc55-42ed-927b-2ab7decf4ca0.png) to view the initial screenshot of the project Kanban Board.
+- Click this [link](https://github.com/users/RitaDee/projects/12)
+- Click this [link](<Screenshot (438).png>) to view the initial screenshot of the project Kanban Board.
 
 ### Team members: 4 (Rita Daniel, Jugoslav Achkoski, Ayo Moses, Lukman Abdulkareem)
 
@@ -89,7 +88,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Clike Here!!!](https://carbooky.vercel.app/)
+- [Clike Here!!!](https://event-connect-capstone.web.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +112,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd cab_bookings_api
+  cd event_connect
   bundle install
 ```
 

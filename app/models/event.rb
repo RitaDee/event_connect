@@ -2,7 +2,7 @@ class Event < ApplicationRecord
   belongs_to :user
   belongs_to :venue
 
-  has_many :tickets
+  has_many :tickets, dependent: :destroy
 
   validates :title, presence: true
   validates :date, presence: true

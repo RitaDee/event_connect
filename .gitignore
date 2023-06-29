@@ -18,7 +18,8 @@
 .env.test.local
 .env.production.local
 
-/tmp/cache/bootsnap
+/tmp/cache/
+
 master.key
 
 npm-debug.log*

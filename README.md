@@ -140,9 +140,6 @@ To run tests, run the following command:
 
 ```sh
   rspec ./spec/models
-  rspec ./spec/model
-  rspec ./spec/controllers
-  rspec ./spec/requests
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

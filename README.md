@@ -88,7 +88,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Clike Here!!!](https://event-connect-capstone.web.app/)
+- [Click Here!!!](https://event-connect-capstone.web.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
